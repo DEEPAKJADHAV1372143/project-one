@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HTML Anchor Tag</title>
+    <style>
+        body{background: #efefef;
+            font-family: Arial,sans-serif;
+        }
+        #page{
+            width: 720px;height: 480px;
+            border: 5px solid white;margin: 0px auto;
+            box-shadow: 0px 0px 15px;overflow:hidden;
+
+        }
+        #slide{
+            width: 2880px;height: 480px;border: 1px solid red;
+            position: relative;position:relative;animation-name: sld;
+            animation-duration: 12s;
+            animation-iteration-count: infinite;
+
+        }
+        @keyframes sld {
+            0%{top:0px;left: 0px}
+            20%{top:0px;left: 0px}
+            30%{top:0px;left: -720px}
+            40%{top:0px;left: -720px}
+           50%{top:0px;left: -1440px}
+            60%{top:0px;left: -1440px}
+            70%{top:0px;left: -2160px}
+            80%{top:0px;left: -2160px}
+        }
+        img{ float: left;}
+    </style>
+</head>
+<body>
+<div id="page">
+    <div id="slide">
+    <img src="home1.jpg" width="720" height="480">
+    <img src="aradhana.jpg" width="720" height="480">
+    <img src="radha.jpg" width="720" height="480">
+    <img src="draygan.jpg" width="720" height="480">
+    </div>
+</div>
+
+</body>
+</html>
