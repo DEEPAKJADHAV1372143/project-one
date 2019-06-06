@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Backgrounds</title>
+<style>
+    body{
+        font-family: "Comic Sans MS",sans-serif;
+    }
+    #bg-image{
+        width: 1000px;
+        background-image: url("img/gallery3.jpeg");
+        padding: 100px;
+    }
+    #bg-position{
+        width: 700px;
+        height: 300px;
+        background-color: #00A000;
+        background-image: url("img/nature.jpg");
+        background-position: top right;
+        background: lightgreen url("img/nature.jpg") no-repeat ;
+
+    }
+    #bg-repeat{ width: 700px;
+        height: 300px;
+        background-image: url("img/nature.jpg");
+        background: lightgreen url("img/nature.jpg") repeat-x scroll top right ;
+
+    }
+    #bg-attachment{width: 700px;
+        height: 300px;
+        background: lightgreen url("img/nature.jpg") scroll bottom ;
+
+    }
+	.deep{width:300px;height:200px; border:2px solid red; float:left;}
+	
+	#a{   background-image: url("img/nature.jpg");}
+	#b{  background-image: url("img/nature.jpg"); background-position: center; background-repeat:no-repeat;}
+	#c{   background-image: url("img/nature.jpg"); background-repeat:no-repeat; background-attachment:fixed;}
+	#d{   background-image: url("img/nature.jpg"); background-repeat:no-repeat; background-size:100px 110px;}
+	#e{   background-color:red;}
+	#l{   background-image: url("img/nature.jpg"); background-repeat:repeat-x;}
+	#m{   background-image: url("img/nature.jpg"); background-repeat:repeat-y;}
+	
+#f{
+  border: 10px double black;
+  padding: 25px;
+  background: url("img/df.gif");
+  background-repeat: no-repeat;
+  background-origin: padding-box;
+}
+#g{
+  border: 10px double black;
+  padding: 25px;
+  background: url("img/df.gif");
+  background-repeat: no-repeat;
+  background-origin: border-box;
+}
+#h{
+  border: 10px double black;
+  padding: 25px;
+  margin:24px;
+  background: url("img/df.gif");
+  background-repeat: no-repeat;
+  background-origin: margin-box;
+}
+#i{
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: border-box;  
+}
+
+#j{
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: padding-box;
+}
+
+#k{
+  border: 10px dotted black;
+  padding: 15px;
+  background: lightblue;
+  background-clip: content-box;
+}
+</style>
+</head>
+<body>
+<H2 style="background-color: teal"> i am with till color background</H2>
+
+ 
+  background-color:red;
+  background: url("img/df.gif");
+  background-repeat: no-repeat; repeat, repeat-x, repeat-y,
+  background-origin: margin-box;
+  background-size:200px 300px; auto ,cover ,contain;
+  background-position:	TL,TC,TR   CL,CC ,CR   BL ,BC, BR;
+  background-attachment:fixed,scroll;
+  color:red;
+  float:left; right; 
+  
+  margin:20px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom:20px;
+  margin-top:20px; 
+  
+ 
+ 
+ 
+
+
+<!--background image-->
+<h2>background image</h2>
+<div id="bg-image">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi architecto autem beatae blanditiis cum dignissimos, dolore dolores dolorum eaque eveniet excepturi exercitationem illum minima nulla numquam optio placeat qui reiciendis, sit suscipit tempore unde voluptatem voluptatibus? Ab dolore, fugiat fugit hic illo nemo nihil possimus, quaerat quasi, quod repellat voluptatum!</p>
+</div>
+
+                <h2>background attachment</h2>
+                <div id="bg-attachment">
+
+                </div>
+                <h2>background position</h2>
+                <div id="bg-position"></div>
+
+                <h2>background repeat</h2>
+                <div id="bg-repeat"></div>
+
+
+				
+				
+				
+				<!-- my pro strat-->sssssssssssssssssssssssssssss
+					
+<div class="deep" id="a">background-image </div>
+<div class="deep" id="b">background-position: top-left,top-center,top-right, center-left,center-center, center-right , bottom-left , bottom-center, bottom-right. background-repeat: no-repeat ,repeat-x , repeat-y, repeat</div>
+<div class="deep" id="c"> background-attachment:scroll,fixed,</div>
+<div class="deep" id="d"> background-size:100px  100px;</div>
+<div class="deep" id="e"> background-color:color name;</div>
+<div class="deep" id="f"> background-origin:padding-box,margin-box,content-box,</div>
+<div class="deep" id="g"></div>
+<div class="deep" id="h"></div>
+<div class="deep" id="i">background-clip:padding-box,margin-box,content-box,</div>
+<div class="deep" id="j"></div>
+<div class="deep" id="k"></div>
+<div class="deep" id="l"> background-repeat:repeat-x</div>
+<div class="deep" id="m"> background-repeat:repeat-y</div>					
+				
+</body>
+</html>
